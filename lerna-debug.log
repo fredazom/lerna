@@ -1,0 +1,63 @@
+0 silly input [ 'publish' ]
+1 silly flags { _: [ 'publish' ],
+1 silly flags   'reject-cycles': false,
+1 silly flags   rejectCycles: false,
+1 silly flags   scope: 'common' }
+2 verbose rootPath D:\IntellijProjects\lerna
+3 info version 2.5.1
+4 silly isInitialized
+5 silly isInitialized true
+6 silly existsSync D:\IntellijProjects\lerna\VERSION
+7 info scope common
+8 silly initialize attempt
+9 info current version 0.0.0
+10 silly isDetachedHead
+11 silly getCurrentBranch
+12 verbose getCurrentBranch master
+13 verbose isDetachedHead false
+14 silly getCurrentBranch
+15 verbose getCurrentBranch master
+16 silly getUpdates
+17 info Checking for updated packages...
+18 silly hasTags
+19 verbose hasTags false
+20 info Comparing with initial commit.
+21 verbose updated common
+22 info Checking for prereleased packages...
+23 silly collectDependents
+24 silly isPackageDependentOf common common
+25 silly collectUpdates
+26 verbose has filtered update common
+27 silly initialize success
+28 silly execute attempt
+29 silly addFile D:\IntellijProjects\lerna\lerna.json
+30 silly runScriptSync preversion common
+31 silly runScriptSync version common
+32 silly addFile D:\IntellijProjects\lerna\common\package.json
+33 silly commit v0.0.1
+34 verbose commit [ 'commit', '--no-gpg-sign', '-m', 'v0.0.1' ]
+35 silly addTag v0.0.1
+36 silly runScriptSync postversion common
+37 info publish Publishing packages to npm...
+38 silly existsSync D:\IntellijProjects\lerna\common\scripts\prepublish.js
+39 verbose execScript No prepublish script found at D:\IntellijProjects\lerna\common\scripts\prepublish.js
+40 info git Pushing tags...
+41 silly pushWithTags [ 'origin', [ 'v0.0.1' ] ]
+42 silly getCurrentBranch
+43 verbose getCurrentBranch master
+44 error execute caught error
+45 error Error: fatal: 'origin' does not appear to be a git repository
+45 error fatal: Could not read from remote repository.
+45 error
+45 error Please make sure you have the correct access rights
+45 error and the repository exists.
+45 error
+45 error     at Function.module.exports.sync (C:\Users\fmes\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:303:26)
+45 error     at Function.execSync (C:\Users\fmes\AppData\Roaming\npm\node_modules\lerna\lib\ChildProcessUtilities.js:59:30)
+45 error     at Function.pushWithTags (C:\Users\fmes\AppData\Roaming\npm\node_modules\lerna\lib\GitUtilities.js:149:39)
+45 error     at C:\Users\fmes\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:343:36
+45 error     at PublishCommand.npmUpdateAsLatest (C:\Users\fmes\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:816:16)
+45 error     at C:\Users\fmes\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:335:16
+45 error     at C:\Users\fmes\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:807:9
+45 error     at C:\Users\fmes\AppData\Roaming\npm\node_modules\lerna\node_modules\async\lib\async.js:726:13
+45 error     at C:\Users\fmes\AppData\Roaming\npm\node_modules\lerna\node_modules\async\lib\async.js:52:16
